@@ -187,3 +187,14 @@ input:hover,select:hover{border-color:rgba(99, 102, 241, 0.3)}
     text-align: right;
   }
 }
+
+@media (max-width: 820px) {
+  body.scrolled .hero-title-main,
+  body.scrolled .hero-title-year,
+  body.scrolled .hero-prize .prize-amount,
+  body.scrolled .hero-prize .prize-label {
+    line-height: 1;
+  }
+}
+
+
