@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Robo Football League — Home</title>
+  <meta name="description" content="Robo Football League 2025 — Home & Registration" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#register">Skip to registration</a>
+
+  <div class="wrap">
+    <header class="site-header">
+      <nav aria-label="Primary navigation" class="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#register">Register</a>
+      </nav>
+    </header>
+
+    <section class="hero centered" role="region" aria-labelledby="heroTitle">
+      <div class="hero-inner">
+        <div class="hero-brand" id="heroBrand">
+          <img src="Picture3.png" alt="RFL" class="hero-logo"/>
+          <div class="hero-title-wrapper">
+            <div class="hero-title-main">Robo Football League</div>
+            <div class="hero-title-year">2025</div>
+          </div>
+        </div>
+        <div class="hero-prize" id="heroPrize">
+          <div class="prize-label">Cash Prize</div>
+          <div class="prize-amount">₹75,000</div>
+        </div>
+        <div class="eyebrow">Competition</div>
+        <h1 id="heroTitle">Precision engineering meets competitive play</h1>
+        <p class="lead">Robo Football League brings student teams together to design, build and compete. Build a robot, join a team, and challenge other colleges.</p>
+        <div class="hero-buttons" style="margin-top:24px;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap">
+          <a class="btn" href="#register" style="text-decoration:none;display:inline-block">Register a team</a>
+          <a class="btn secondary" href="about.html" style="text-decoration:none;display:inline-block">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="content-grid">
+      <section class="card quick-info about-teaser" id="about-teaser">
+        <h3>Why participate</h3>
+        <p class="muted">RFL blends mechanical design, sensing, and strategy. Teams gain hands-on engineering experience and compete in front of peers and industry judges.</p>
+
+        <div class="info-columns" style="margin-top:18px">
+          <div class="info-block">
+            <h4>Who can join</h4>
+            <p class="muted">College teams from across disciplines. Both singles (3 members) and doubles (6 members) formats are supported.</p>
+          </div>
+
+          <div class="info-block">
+            <h4>Event essentials</h4>
+            <p class="muted">Arena rules, weight & size limits, and safety checks. Teams must follow the published robot regulations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration card stays on Home for quick access -->
+      <aside class="card register-card" id="register" aria-labelledby="formHeading">
+        <h3 id="formHeading">Team registration</h3>
+        <p class="foot-note">All fields required. SUC codes must be exactly 10 characters for each participant.</p>
+
+        <form id="registrationForm" novalidate>
+          <label for="teamName">Team name</label>
+          <input id="teamName" name="teamName" required />
+
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="Singles">Singles (3 members)</option>
+            <option value="Doubles">Doubles (6 members)</option>
+          </select>
+
+          <div class="row">
+            <div>
+              <label for="leaderPhone">Leader phone</label>
+              <input id="leaderPhone" name="leaderPhone" type="tel" required />
+            </div>
+            <div>
+              <label for="leaderEmail">Leader email</label>
+              <input id="leaderEmail" name="leaderEmail" type="email" required />
+            </div>
+          </div>
+
+          <label for="collegeBranch">College / Branch</label>
+          <input id="collegeBranch" name="collegeBranch" required />
+
+          <label for="city">City</label>
+          <input id="city" name="city" required />
+
+          <h4>Participants</h4>
+          <div id="participants" class="participants" aria-live="polite"></div>
+
+          <div class="button-row" style="align-items:center">
+            <button class="btn" type="submit">Submit registration</button>
+            <button class="btn secondary" type="button" id="resetForm">Reset</button>
+            <div id="formStatus" class="muted status" role="status" aria-live="polite" style="margin-left:8px"></div>
+          </div>
+        </form>
+
+        <footer class="card-foot">© 2025 Robo Football League</footer>
+      </aside>
+    </main>
+
+    <footer class="site-foot">
+      <div class="muted">Built for clarity and competition. Venue & schedule communicated after registration.</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
