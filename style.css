@@ -165,36 +165,41 @@ input:hover,select:hover{border-color:rgba(99, 102, 241, 0.3)}
   .hero{padding:56px}
 }
 
-/* === MOBILE: FIX HEADER ALIGNMENT (LOGO + PRIZE) === */
-@media (max-width: 820px) {
+/* === MOBILE FIXED HEADER ALIGNMENT (FINAL) === */
+@media (max-width: 768px) {
+
   body.scrolled .hero-brand,
   body.scrolled .hero-prize {
-    top: 12px;                 /* SAME vertical position */
-    height: 44px;              /* SAME height */
-    padding: 6px 10px;         /* SAME padding */
+    position: fixed;
+    top: 24px;                 /* shared anchor */
+    transform: none;
+    height: auto;
     display: flex;
-    align-items: center;       /* Vertical centering */
+    align-items: center;       /* TRUE vertical centering */
+    padding: 8px 12px;
+    border-radius: 12px;
   }
 
   body.scrolled .hero-brand {
-    left: 14px;
+    left: 12px;
     gap: 8px;
   }
 
   body.scrolled .hero-prize {
-    right: 14px;
+    right: 12px;
     justify-content: center;
     text-align: right;
   }
-}
 
-@media (max-width: 820px) {
+  /* Normalize internal text heights */
   body.scrolled .hero-title-main,
   body.scrolled .hero-title-year,
-  body.scrolled .hero-prize .prize-amount,
-  body.scrolled .hero-prize .prize-label {
+  body.scrolled .hero-prize .prize-label,
+  body.scrolled .hero-prize .prize-amount {
     line-height: 1;
+    margin: 0;
   }
 }
+
 
 
